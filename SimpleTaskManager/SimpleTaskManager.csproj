@@ -8,8 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="docs\" />
-    <Folder Include="installers\" />
+    <Compile Remove="installers\**" />
+    <EmbeddedResource Remove="installers\**" />
+    <None Remove="installers\**" />
   </ItemGroup>
 
   <ItemGroup>

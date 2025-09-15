@@ -24,7 +24,7 @@ The program allows users to:
 ---
 
 ## Screenshots
-(Add your screenshots here, e.g. from Visual Studio console window)
+![Main Menu](docs/screenshots/screenshot1.png)
 
 
 
