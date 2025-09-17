@@ -1,5 +1,11 @@
 ﻿# SimpleTaskManager
 
+## Video Demo
+
+Watch video demo:
+[Katso video](docs/videos/demo.mp4)
+<video src="docs/videos/demo.mp4" controls width="600"></video>
+
 ## Description
 SimpleTaskManager is a C# console application for managing personal tasks.  
 The program allows users to:
@@ -106,7 +112,7 @@ Use the menu to manage tasks
 
 Future Improvements
 
-Support for priorities (High / Medium / Low)
+Support for priorities (Medium)
 
 Search and filter tasks
 

@@ -1,12 +1,15 @@
-﻿using SimpleTaskManager.Services;
+﻿using SimpleTaskManager.Models;
+using SimpleTaskManager.Services;
+using System.Threading.Tasks;
 
 namespace SimpleTaskManager.UI
 {
+    
     public static class ConsoleUi
     {
         public static void Run()
         {
-            Console.Write("Enter username: ");
+        Console.Write("Enter username: ");
             string? username = Console.ReadLine();
             var service = new TaskService(username);
 
@@ -26,14 +29,18 @@ namespace SimpleTaskManager.UI
                 switch (choice)
                 {
                     case "1":
+
                         Console.Write("Task title: ");
                         string? title = Console.ReadLine();
 
-                        Console.Write("Due date (dd.mm.yyyy) or empty: ");
+                        Console.Write("Due date (dd.MM.yyyy) or empty: ");
                         string? dateInput = Console.ReadLine();
                         DateTime? dueDate = null;
-                        if (DateTime.TryParse(dateInput, out DateTime parsed))
+                        if (!string.IsNullOrWhiteSpace(dateInput) &&
+                            DateTime.TryParseExact(dateInput, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime parsed))
+                        {
                             dueDate = parsed;
+                        }
 
                         service.AddTask(title, dueDate);
                         break;
