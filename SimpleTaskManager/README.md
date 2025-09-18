@@ -29,6 +29,15 @@ The program allows users to:
 
 ---
 
+## Possible updates
+-Support for priorities (low,Medium,high)
+-Search and filter tasks
+-Export tasks to PDF/CSV
+-GUI version with Windows Forms or WPF
+-Notifications for overdue tasks
+
+---
+
 ## Screenshots
 ![Main Menu](docs/screenshots/screenshot1.png)
 
@@ -107,17 +116,3 @@ Run project
 Enter a username (tasks saved to <username>_tasks.txt)
 
 Use the menu to manage tasks
-
-
-
-Future Improvements
-
-Support for priorities (Medium)
-
-Search and filter tasks
-
-Export tasks to PDF/CSV
-
-GUI version with Windows Forms or WPF
-
-Notifications for overdue tasks
